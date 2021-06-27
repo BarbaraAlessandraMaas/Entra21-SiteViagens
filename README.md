@@ -10,4 +10,4 @@ Consiste em um site de viagens que contém:
 
 Trabalho realizado por:
 
-- árbara Alessandra Maas;
+- Bárbara Alessandra Maas;
