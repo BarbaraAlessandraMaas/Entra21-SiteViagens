@@ -59,6 +59,8 @@ header { /* Retira a barra de rolagem do background, cortando o conteúdo */
     position: relative;
     flex-flow: column nowrap;
     align-items: center;
+    height: calc(100vh - 280px);
+    justify-content: center;
 }
 
 .content .botao a { /* Persolaniza o botão que redireciona para a página de conteúdo */
