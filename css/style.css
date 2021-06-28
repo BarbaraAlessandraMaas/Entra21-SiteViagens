@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body { /* Define a margem inicial e a fonte padrão */
+    margin: 0px;
+    font-family: 'Mate SC', serif;
+}
+
+header { /* Retira a barra de rolagem do background, cortando o conteúdo */
+    height: auto;
+    overflow: hidden;
+}
+
+#background { /* Torna o background responsivo */
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.cabecalho { /* Cria a borda branca da página */
+    background-color: rgba(255, 255, 255, 0.438);
+    display: flex;
+    min-height: 70px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda, .direita { /* Determina que os elementos da flexbox no topo ocupem 50% cada */
+    flex-basis: 50%;
+}
+
+.direita { /* Alinha os ícones à direita */
+    text-align: end;
+    padding-right: 1em;
+}
+
+.esquerda a { /* Personaliza o link de início */
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+.cabecalho .itens { /* Personaliza o segundo link de início */
+    font-size: 21px;
+}
+
+.direita a { /* Determina o tamanho, a cor e a margem dos ícones */
+    font-size: 25px;
+    padding: 0px 20px;
+    color: black;
+}
+
+.content { /* Determina as características da flexbox do título e botão */
+    display: flex;
+    position: relative;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.content .botao a { /* Persolaniza o botão que redireciona para a página de conteúdo */
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.438);
+    font-size: 30px;
+    padding: 10px 25px;
+}
+
+.content .um { /* Altera as características do título superior */
+    font-size: 100px;
+    margin-bottom: 2px;
+
+}
+
+.content .dois { /* Determina as características do título inferior */
+    font-size: 90px;
+    margin-top: 2px;
+}
+
+/* ---------- Hover ---------- */
+
+a:hover { /* Muda a cor dos links ao passar o mouse */
+    color: #194b59;
+}
+
+.botao a:hover { /* Muda a cor do botão ao passar o mouse */
+    color: #194b59;
+}
+
+.menu ul li a:hover { /* Muda o estilo da nav ao passar o mouse */
+    color: #194b59;
+}
+
+.button:hover { /* Muda o estilo do botão das imagens ao passar o mouse */
+    color: white;
+    background-color: #194b59;
+}
+
+.card a:hover { /* Muda o estilo do link no card ao passar o mouse */
+    color: #194b59;
+}
+
+footer a:hover { /* Muda o estilo do link para voltar ao topo, ao passar o mouse */
+    color: #194b59;
+    background-color: white;
+    border-bottom: 2px solid #194b59;
+}
+
+/* --------------------------- */
+
+.margem { /* Caracteriza a div principal que contém os demais elementos */
+    background-color: white;
+    position: relative;
+    min-height: 100vh;
+    margin: 0px 8vw;
+}
+
+.paragrafo { /* Define a posição do parágrafo */
+    position: relative;
+    text-align: center;
+    font-size: 27px;
+    margin: 15vh 30vw;
+}
+
+.menu ul { /* Remove o estilo de lista da nav */
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li { /* Define que a nav é horizontal */
+    display: inline;
+    padding: 0px 3px;
+}
+
+.menu ul li a { /* Define o visual da nav */
+    padding: 20px 30px 10px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+/* ------- Seção da Esquerda ------- */
+
+#esquerda .primeira { /* Define o display flex para as seções da esquerda */
+    display: flex;
+}
+
+#esquerda .esquerda { /* Define a margem da imagem */
+    margin: 10px 30px;
+    height: 300px;
+    width: 500;
+}
+
+#esquerda .direita { /* Personaliza o texto */
+    margin: 10px 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* ------- Seção da Direita ------- */
+
+#direita .segunda { /* Define o display flex para as seções da direita */
+    display: flex;
+}
+
+#direita .esquerda { /* Personaliza o texto */
+    margin: 10px 30px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#direita .direita { /* Define a margem da imagem */
+    margin: 10px 30px;
+    height: 300px;
+    width: 500;
+}
+
+/* ------- Botão e Imagem ------- */
+
+.button { /* Persolaniza os botões para passar as imagens */
+    border: none;
+    border-radius: none;
+    color: #194b59;
+    background-color: white;
+    padding: 8px 16px;
+    vertical-align: middle;
+}
+
+.imagem1, .imagem2, .imagem3, .imagem4, .imagem5 { /* Define o tamanho de todas as imagens */
+    display: none;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ------- Itens Necessários ------- */
+
+.objetos { /* Define o fundo dos cards */
+    background-color: rgba(255, 255, 255, 0.438);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-size: 21px;
+    text-align: center;
+    padding: 60px 30px 90px;
+    justify-content: center;
+}
+
+.objetos .card { /* Personaliza os cards */
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+}
+
+.card a { /* Muda os links dos itens */
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #194b59;;
+}
+
+.card p { /* Diminui a fonte dos preços */
+    font-size: 18px;
+}
+
+/* ---------- Footer ---------- */
+
+footer { /* Define o fundo do footer */
+    background-color: white;
+    height: 70px;
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+}
+
+footer a { /* Personaliza o link para voltar ao topo */
+    background-color: #194b59;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
